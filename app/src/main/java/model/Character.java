@@ -15,4 +15,5 @@ public class Character {
     private String photo;
     private String cover;
     private String description;
+    private Abilities abilities;
 }
