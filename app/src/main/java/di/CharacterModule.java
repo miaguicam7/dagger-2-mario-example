@@ -16,7 +16,7 @@ public class CharacterModule {
     }
 
     @Provides
-    Repository provideCharacterRepository(){
-        return new CharacterRepository();
+    Repository provideCharacterRepository(DataSource dataSource){
+        return new CharacterRepository(dataSource);
     }
 }
