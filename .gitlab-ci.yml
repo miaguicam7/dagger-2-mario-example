@@ -5,7 +5,7 @@ image: openjdk:8-jdk
 variables:
   ANDROID_COMPILE_SDK: "27"
   ANDROID_BUILD_TOOLS: "24.0.0"
-  ANDROID_SDK_TOOLS: "26.1.1"
+  ANDROID_SDK_TOOLS: "24.4.1"
 
 before_script:
   - apt-get --quiet update --yes
@@ -21,7 +21,6 @@ before_script:
   - export ANDROID_HOME=$PWD/android-sdk-linux
   - export PATH=$PATH:$PWD/android-sdk-linux/platform-tools/
   - chmod +x ./gradlew
-  - yes | sdkmanager "platforms;android-27"
 
 stages:
   - build
@@ -30,6 +29,7 @@ stages:
 build:
   stage: build
   script:
+    - echo y | android update sdk --no-ui --all --filter build-tools-26.0.2,android-26
     - ./gradlew assembleDebug
   artifacts:
     paths:
