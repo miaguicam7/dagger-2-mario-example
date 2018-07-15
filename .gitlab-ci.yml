@@ -21,6 +21,7 @@ before_script:
   - export ANDROID_HOME=$PWD/android-sdk-linux
   - export PATH=$PATH:$PWD/android-sdk-linux/platform-tools/
   - chmod +x ./gradlew
+  - echo y | tools/bin/sdkmanager --licenses
 
 stages:
   - build
@@ -29,7 +30,6 @@ stages:
 build:
   stage: build
   script:
-    - echo y | tools/bin/sdkmanager --licenses
     - ./gradlew assembleDebug
   artifacts:
     paths:
