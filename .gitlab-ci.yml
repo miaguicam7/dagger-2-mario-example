@@ -29,7 +29,7 @@ stages:
 build:
   stage: build
   script:
-    - y | tools/bin/sdkmanager --licenses
+    - echo y | tools/bin/sdkmanager --licenses
     - ./gradlew assembleDebug
   artifacts:
     paths:
