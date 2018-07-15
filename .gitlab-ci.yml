@@ -29,7 +29,7 @@ stages:
 build:
   stage: build
   script:
-    - echo y | android update sdk --no-ui --all --filter build-tools-26.0.2,android-26
+    #- echo y | android update sdk --no-ui --all --filter build-tools-26.0.2,android-26
     - ./gradlew assembleDebug
   artifacts:
     paths:
