@@ -1,0 +1,10 @@
+
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÖþíÝ8¥ð­§Ê,
+Lsquid:S1068"0Remove this unused "ELEVATION_DP" private field.(ÖþíÝ8¥ð­§Ê,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(î•ÿúÿÿÿÿ8¥ð­§Ê,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨‰ïÃ8¥ð­§Ê,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ðÎƒù8¥ð­§Ê,
+œsquid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(óšÀ58¥ð­§Ê,
+^squid:UselessImportCheck"5Remove this unused import 'view.presenter.Presenter'.(°ÛÚŸ8¥ð­§Ê,
+\squid:UselessImportCheck".Remove this unused import 'android.os.Bundle'.(°þÊóøÿÿÿÿ8¥ð­§Ê,
+ssquid:UselessImportCheck"ERemove this unused import 'android.support.v7.app.AppCompatActivity'.(«Û®ûüÿÿÿÿ8¥ð­§Ê,
