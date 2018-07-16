@@ -10,6 +10,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 import butterknife.BindView;
+import example.miaguicam.mario_kart_dagger2.MarioKartApplication;
 import example.miaguicam.mario_kart_dagger2.view.presenter.CharacterPresenter;
 
 public class CharacterActivity extends BaseActivity implements CharacterPresenter.View{
@@ -30,10 +31,17 @@ public class CharacterActivity extends BaseActivity implements CharacterPresente
         return R.layout.activity_characters;
     }
 
- /*   private void initializeDagger() {
-        SuperMarioKartApplication app = (SuperMarioKartApplication) getApplication();
+    @Override protected void onPrepareActivity() {
+        super.onPrepareActivity();
+        initializeDagger();
+        presenter.setView(this);
+        presenter.initialize();
+    }
+
+    private void initializeDagger() {
+        MarioKartApplication app = (MarioKartApplication) getApplication();
         app.getCharactersComponent().inject(this);
-    }*/
+    }
 
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
