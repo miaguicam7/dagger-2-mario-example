@@ -1,6 +1,7 @@
 package data;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import javax.inject.Inject;
 
@@ -18,6 +19,7 @@ public class CharacterRepository implements  Repository {
 
     @Override
     public Observable<List<Character>> getAll() {
-        return null;
+        final int seconds = 2000;
+        return Observable.just(characters).delay(seconds, TimeUnit.MILLISECONDS);
     }
 }
