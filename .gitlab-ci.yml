@@ -26,6 +26,8 @@ stages:
   - test
 
 build:
+  before_script:
+    - yes | sdkmanager "platforms;android-27"
   stage: build
   script:
     - ./gradlew assembleDebug --info
