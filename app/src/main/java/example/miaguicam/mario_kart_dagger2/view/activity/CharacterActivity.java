@@ -1,8 +1,6 @@
-package view.activity;
+package example.miaguicam.mario_kart_dagger2.view.activity;
 
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.ProgressBar;
 
 import com.example.miaguicam.mario_kart_dagger2.R;
@@ -12,8 +10,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 import butterknife.BindView;
-import view.presenter.CharacterPresenter;
-import view.presenter.Presenter;
+import example.miaguicam.mario_kart_dagger2.view.presenter.CharacterPresenter;
 
 public class CharacterActivity extends BaseActivity implements CharacterPresenter.View{
 

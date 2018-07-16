@@ -1,4 +1,4 @@
-package service;
+package example.miaguicam.mario_kart_dagger2.service;
 
 import io.reactivex.observers.DisposableObserver;
 

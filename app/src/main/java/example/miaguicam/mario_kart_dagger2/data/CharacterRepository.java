@@ -1,4 +1,4 @@
-package data;
+package example.miaguicam.mario_kart_dagger2.data;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 import javax.inject.Inject;
 
 import io.reactivex.Observable;
-import model.Character;
+import example.miaguicam.mario_kart_dagger2.model.Character;
 
 public class CharacterRepository implements  Repository {
 

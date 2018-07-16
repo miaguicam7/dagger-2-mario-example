@@ -1,12 +1,12 @@
-package view.presenter;
+package example.miaguicam.mario_kart_dagger2.view.presenter;
 
 import java.util.List;
 
 import javax.inject.Inject;
 
-import data.Repository;
-import service.CharacterService;
-import service.GenericObserver;
+import example.miaguicam.mario_kart_dagger2.data.Repository;
+import example.miaguicam.mario_kart_dagger2.service.CharacterService;
+import example.miaguicam.mario_kart_dagger2.service.GenericObserver;
 
 public class CharacterPresenter extends Presenter<CharacterPresenter.View>{
 

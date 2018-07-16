@@ -28,7 +28,7 @@ Configura tu presenter para que dagger pueda inyectar una dependencia de GET ALL
 
 
 ## Task 6
-Implementa una vista android activity, view.activity.fragment u otra con dependencia a CHARACTERS PRESENTER
+Implementa una vista android activity, example.miaguicam.mario_kart_dagger2.view.activity.fragment u otra con dependencia a CHARACTERS PRESENTER
 Configura tu vista android para que dagger pueda inyectar una dependencia de CHARACTERS PRESENTER
 Muestra a los personajes de la forma que mas te guste.
 

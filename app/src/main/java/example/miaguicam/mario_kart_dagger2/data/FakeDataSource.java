@@ -1,4 +1,4 @@
-package data;
+package example.miaguicam.mario_kart_dagger2.data;
 
 
 import com.example.miaguicam.mario_kart_dagger2.R;
@@ -6,8 +6,8 @@ import com.example.miaguicam.mario_kart_dagger2.R;
 import java.util.LinkedList;
 import java.util.List;
 
-import model.Abilities;
-import model.Character;
+import example.miaguicam.mario_kart_dagger2.model.Abilities;
+import example.miaguicam.mario_kart_dagger2.model.Character;
 
 public class FakeDataSource implements DataSource {
 

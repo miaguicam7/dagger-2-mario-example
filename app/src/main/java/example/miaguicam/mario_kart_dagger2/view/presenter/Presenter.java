@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package view.presenter;
+package example.miaguicam.mario_kart_dagger2.view.presenter;
 
 public class Presenter<T extends Presenter.View> {
 

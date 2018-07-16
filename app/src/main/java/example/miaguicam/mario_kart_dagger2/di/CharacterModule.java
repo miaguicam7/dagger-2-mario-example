@@ -1,11 +1,11 @@
-package di;
+package example.miaguicam.mario_kart_dagger2.di;
 
 import dagger.Module;
 import dagger.Provides;
-import data.CharacterRepository;
-import data.DataSource;
-import data.FakeDataSource;
-import data.Repository;
+import example.miaguicam.mario_kart_dagger2.data.CharacterRepository;
+import example.miaguicam.mario_kart_dagger2.data.DataSource;
+import example.miaguicam.mario_kart_dagger2.data.FakeDataSource;
+import example.miaguicam.mario_kart_dagger2.data.Repository;
 
 @Module
 public class CharacterModule {

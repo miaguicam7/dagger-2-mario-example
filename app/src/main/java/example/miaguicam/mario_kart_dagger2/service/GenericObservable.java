@@ -1,11 +1,10 @@
-package service;
+package example.miaguicam.mario_kart_dagger2.service;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
-import view.presenter.CharacterPresenter;
 
 abstract class GenericObservable<T> {
 

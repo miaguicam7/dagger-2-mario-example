@@ -1,4 +1,4 @@
-package model;
+package example.miaguicam.mario_kart_dagger2.model;
 
 import java.io.Serializable;
 
