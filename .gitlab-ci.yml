@@ -21,7 +21,7 @@ before_script:
   - export ANDROID_HOME=$PWD/android-sdk-linux
   - export PATH=$PATH:$PWD/android-sdk-linux/platform-tools/
   - touch /root/.android/repositories.cfg
-  - echo y | sdkmanager --licenses
+  - echo y | android-sdk-linux/tools/android --licenses
   - chmod +x ./gradlew   
 stages:
   - build
