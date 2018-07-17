@@ -14,29 +14,17 @@
  * limitations under the License.
  */
 
-package example.miaguicam.mario_kart_dagger2.view.presenter;
+package example.miaguicam.mario_kart_dagger2.adapter;
 
-public class Presenter<T extends Presenter.View> {
+import android.support.v7.widget.CardView;
 
-    private T view;
+public interface CharacterAdapter {
 
-    public void setView(T view) {
-        this.view = view;
-    }
+  int MAX_ELEVATION = 8;
 
-    public T getView() {
-        return view;
-    }
+  float getElevation();
 
-    public void initialize() {
+  CardView getCardViewAt(int position);
 
-    }
-
-    public void terminate() {
-
-    }
-
-    public interface View {
-
-    }
+  int getCount();
 }

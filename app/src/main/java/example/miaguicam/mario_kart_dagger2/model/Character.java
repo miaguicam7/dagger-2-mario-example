@@ -13,7 +13,7 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(fluent = true)
-public class Character implements Serializable{
+public class Character implements Serializable {
     private String id;
     private String name;
     private int photo;

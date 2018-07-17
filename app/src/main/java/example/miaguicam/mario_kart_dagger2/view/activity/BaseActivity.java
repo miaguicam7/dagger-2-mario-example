@@ -17,7 +17,6 @@ public abstract class BaseActivity  extends AppCompatActivity implements Present
     @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutResID());
-      //  onPrepareSupportActionBar();
         bindViews();
         onPreparePresenter();
         onPrepareActivity();

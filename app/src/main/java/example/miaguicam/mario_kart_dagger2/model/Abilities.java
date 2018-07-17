@@ -13,11 +13,11 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(fluent = true)
-public class Abilities  implements Serializable {
+public class Abilities implements Serializable {
     private String accelerate;
     private String steer;
     private String brake;
     private String reverse;
     private String lookBehind;
-    private  String drift;
+    private String drift;
 }

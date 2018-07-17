@@ -4,11 +4,11 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import example.miaguicam.mario_kart_dagger2.data.Repository;
 import example.miaguicam.mario_kart_dagger2.service.CharacterService;
 import example.miaguicam.mario_kart_dagger2.service.GenericObserver;
+import example.miaguicam.mario_kart_dagger2.model.Character;
 
-public class CharacterPresenter extends Presenter<CharacterPresenter.View>{
+public class CharacterPresenter extends Presenter<CharacterPresenter.View> {
 
 
     private CharacterService characterService;
@@ -20,12 +20,14 @@ public class CharacterPresenter extends Presenter<CharacterPresenter.View>{
 
 
     @SuppressWarnings("unchecked")
-    @Override public void initialize() {
+    @Override
+    public void initialize() {
         super.initialize();
         this.characterService.execute(new GetCharacterListObserver());
     }
 
-    @Override public void terminate() {
+    @Override
+    public void terminate() {
         super.terminate();
         characterService.dispose();
         setView(null);
@@ -34,16 +36,19 @@ public class CharacterPresenter extends Presenter<CharacterPresenter.View>{
 
     private class GetCharacterListObserver extends GenericObserver<List<Character>> {
 
-        @Override public void onComplete() {
+        @Override
+        public void onComplete() {
             super.onComplete();
             getView().hideLoading();
         }
 
-        @Override public void onError(Throwable e) {
+        @Override
+        public void onError(Throwable e) {
             super.onError(e);
         }
 
-        @Override public void onNext(List<Character> characters) {
+        @Override
+        public void onNext(List<Character> characters) {
             super.onNext(characters);
             getView().showCharacters(characters);
         }

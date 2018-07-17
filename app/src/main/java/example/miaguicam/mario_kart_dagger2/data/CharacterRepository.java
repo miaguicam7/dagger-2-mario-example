@@ -8,12 +8,12 @@ import javax.inject.Inject;
 import io.reactivex.Observable;
 import example.miaguicam.mario_kart_dagger2.model.Character;
 
-public class CharacterRepository implements  Repository {
+public class CharacterRepository implements Repository {
 
     private List<Character> characters;
 
     @Inject
-    public CharacterRepository(DataSource dataSource){
+    public CharacterRepository(DataSource dataSource) {
         this.characters = dataSource.provideCharacterList();
     }
 
