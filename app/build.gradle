@@ -19,6 +19,7 @@ android {
     }
 }
 
+//TODO: Sacar el versionado de librerias al gradle compile.
 dependencies {
     compile 'com.android.support:multidex:1.0.0'
 
@@ -48,12 +49,20 @@ dependencies {
 
     implementation 'com.google.code.gson:gson:2.8.5'
 
+
+
     androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
     androidTestCompile 'com.android.support:support-annotations:26.1.0'
     androidTestCompile 'info.cukes:cucumber-android:1.2.5@jar'
     androidTestCompile 'info.cukes:cucumber-picocontainer:1.2.4'
     androidTestCompile 'com.android.support.test:runner:1.0.2'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestCompile "org.robolectric:robolectric:3.4.2"
+
+    androidTestCompile "org.mockito:mockito-core:2.8.8"
+    androidTestCompile "org.mockito:mockito-android:2.8.8"
+    androidTestCompile "com.android.support.test:runner:0.5"
+    androidTestCompile "com.android.support.test:rules:0.5"
 
     androidTestCompile 'junit:junit:4.12'
     androidTestCompile 'org.hamcrest:hamcrest-library:1.3'
